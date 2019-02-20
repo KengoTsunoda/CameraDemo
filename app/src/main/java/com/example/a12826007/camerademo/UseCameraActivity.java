@@ -33,7 +33,9 @@ public class UseCameraActivity extends AppCompatActivity {
      * 画像部分がタップされた時の処理メソッド
      */
     public void onCameraImageClick(View view){
+        // カメラアプリを起動する暗黙的インテント
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        // Activityを起動
         startActivityForResult(intent, 200);
     }
 }
